@@ -14,6 +14,9 @@ section {
   align-items: center;
   background-color: #CFFFFE;
 }
+section {
+  background-image: url(bg.jpg);
+}
 p{
   padding-top: 1rem;
 
@@ -246,7 +249,7 @@ font-weight: bolder;}
    padding-top: 10rem;
 }
 .inner-grid {
-   flex: 15%;
+   flex: 25%;
    max-width: 35%;
    padding: 0 100px;
 }
@@ -260,11 +263,22 @@ font-weight: bolder;}
   float:right;
   padding-top: 4rem;
   padding-right: 3rem;
+  color: #E99497;
+
+}
+#Benefits h2{
+  position: absolute;
+    padding-bottom: 450px;
+    font-size: 3rem;
+    font-family: "Ubuntu";
 }
 #Availability h1{
-display: flex;
-align-items:center;
-justify-content: center;
+padding-bottom: 500px;
+position: absolute;
+font-family: "Ubuntu";
+font-size: 4rem;
+color: #E40017;
+
 }
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
