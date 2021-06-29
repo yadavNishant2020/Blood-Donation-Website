@@ -66,29 +66,38 @@ nav ul li{
 nav ul li:hover{
 color: white;
 }
+li strong a button:hover {
+  background-color: rgb(255, 72, 0);
+}
 nav ul li a{
   text-decoration: none;
   color: white;
   padding: 1rem;
   margin-bottom: 7.5px;
 }
-
 .container1 {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
 }
-
 .stop {
     position: fixed;
 }
-
+li strong a button {
+  border-radius: 20px;
+  border: none;
+  background-color: #e43011;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 16px;
+}
 /* gif */
 .gif{
 z-index:1;
 position:absolute;
-
 }
 /* for flip */
 .flip-box {
