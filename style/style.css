@@ -17,9 +17,8 @@ section {
 }
 section {
   background-image: url(bg.jpg);
-
 }
-p{
+.count p{
   padding-top: 1rem;
 
   opacity: 1;
@@ -330,7 +329,7 @@ font-family: 'Righteous', cursive;
 }
 
 /* Contact page */
-.container {
+.container11 {
   position: relative;
   width: 20%;
 }
@@ -356,7 +355,7 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
   transition: .5s ease;
 }
 
-.container:hover .overlay {
+.container11:hover .overlay {
   bottom: 0;
   height: 100%;
 }
@@ -396,3 +395,4 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
     font-size: 0.9em;
   }
 }
+/* sign up */
