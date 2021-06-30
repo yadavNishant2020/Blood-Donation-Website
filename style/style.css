@@ -75,9 +75,8 @@ nav ul li a{
 
 .container1 {
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 10px;
+    display: flex;
+
 }
 
 .stop {
@@ -98,6 +97,7 @@ position:absolute;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   justify-self: center;
+  margin-right: 300px;
 }
 
 /* This container is needed to position the front and back side */
@@ -108,11 +108,12 @@ position:absolute;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 /* Position the front and back side */
@@ -132,7 +133,7 @@ position:absolute;
 
 /* Style the back side */
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: #E40017;
   color: white;
   transform: rotateY(180deg);
   border-radius: 15px;
@@ -141,6 +142,7 @@ position:absolute;
   width: auto;
   height: 350px;
   border-radius: 15px;
+
 }
 
 /* Slider */
