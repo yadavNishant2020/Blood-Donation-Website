@@ -2,231 +2,248 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blood Bucket</title>
-  <link rel="stylesheet" href="../style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bucket</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
-
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap');
+</style>
 <body>
-  <div id="navbar">
+  <div id="abc">
     <nav>
       <h4>Blood Bucket</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#Availability">Availability</a></li>
-        <li><a class="contact" href="#contact">Contact Us </a></li>
-        <li><strong><a href="register.html"><button class="nav_btn">SIGN UP</button></a></strong></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Benefits">Benefits</a></li>
+            <li><a href="#Availability">Availability</a></li>
+            <li><a class="contact" href="#contact">Contact Us </a></li>
+            <li><strong><a href="signUp.html" target="_blank"><button class="nav_btn">SIGN UP</button></a></strong></li>
+        </ul>
     </nav>
+</div>
+<section id="home">
+<!-- <div class="brand">
+<h1>Blood Bucket</h1>
+<p>Sometimes money cannot save life but donated blood can!</p>
+</div>
+<div class="gif">
+<video src="../assets/img1.mp4" autoplay poster="posterimage.jpg">
+
+</video>
+</div> -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider With Next And Previous Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+
+    <div class="slider">
+      <div class="slide active">
+        <img src="1.jpg" alt="">
+        <div class="info">
+          <h3>DONATE BLOOD , SAVE LIFE!</h3>
+          <h1>Sometimes money cannot save life but donated blood can!</h1>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="2.jpg" alt="">
+        <div class="info">
+          <h3>DONATE BLOOD , SAVE LIFE!</h3>
+          <h1>Your donation can be the reason for someone's smile!</h1>        </div>
+      </div>
+      <div class="slide">
+        <img src="3.jpg" alt="">
+        <div class="info">
+          <h3>DONATE BLOOD , SAVE LIFE!</h3>
+          <h1>Excuses never save a life, Blood donation does!</h1>        </div>
+      </div>
+
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
+    </div>
+    </section>
+    <section id="Benefits">
+      <h2>Benefits Of Blood Donation</h2>
+        <div class="container1">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="b1.jpg" alt="">
+                  </div>
+                  <div class="flip-box-back">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="b2.jpg" alt="">
+                  </div>
+                  <div class="flip-box-back">
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="b3.jpg" alt="">
+                  </div>
+                  <div class="flip-box-back">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+<section id="Availability" style="  background-image: url(bg.jpg);
+">
+  <h1>Availability</h1>
+
+  <div class="outer-grid">
+  <div class="inner-grid">
+  <img src="ab+.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
   </div>
-
-  <section style="background-image: url(../assets/images/3.jpg); background-size: cover;" id="home">
-    <div class="left-head">
-      <h1>Welcome<br>
-      to <br>
-      BLOOD <br>
-      BUCKET
-      </h1>
-    </div>
-    <div class="right-box">
-      <form action="#" method="get">
-        <input type="text" name="searchCity" id="searchCity" placeholder="Search City"><br><br><br>
-        <select name="bg-select" id="bg-select">
-          <option value="">Blood Group</option>
-          <option value="A+">A+</option>
-          <option value="A-">A-</option>
-          <option value="B+">B+</option>
-          <option value="B-">B-</option>
-          <option value="O+">O+</option>
-          <option value="O-">O-</option>
-          <option value="AB+">AB+</option>
-          <option value="AB-">AB-</option>
-        </select><br><br><br>
-        <button id="search-btn" type="submit">SEARCH</button>
-      </form>
-    </div>
-  </section>
-  <hr>
-
-  <section style="background-image: url(../assets/images/2.jpg); background-size: cover;" id="benefits">
-    <div class="head-container">
-      <h2>Benefits of Blood Donation</h2>
-    </div>
-    <div class="body-container">
-      <div class="box">
-        <div class="box-head">
-          <h2>
-            Reduces Risk of Cancer
-          </h2><br>
-        </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa sit dignissimos iste provident, libero repellat est quisquam at repellendus necessitatibus. Minus libero eos expedita! Modi enim sed nam quod.
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <h2>
-            Lowers Risk of Heart Attack
-          </h2><br>
-        </div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam id recusandae eos unde minima quam cumque aperiam at ex mollitia, itaque excepturi velit dolore nam, quaerat sunt rerum sed dolorum.
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <h2>
-            Helps Liver Stay Healthy
-          </h2><br>
-        </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur, aperiam velit sapiente illo accusamus, doloremque ipsum debitis eius eos totam quisquam a odio fugit voluptate voluptatum dicta. Quas, molestias.
-      </div>
-      <div class="box">
-        <div class="box-head">
-          <h2>
-            Helps Your Mental State
-          </h2><br>
-        </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur, aperiam velit sapiente illo accusamus, doloremque ipsum debitis eius eos totam quisquam a odio fugit voluptate voluptatum dicta. Quas, molestias.
-      </div>
-    </div>
-  </section>
-  <hr>
-
-  <section id="availability">
-    <div class="head-container">
-      <h2>
-        Availability
-      </h2>
-    </div>
-    <div class="body-container">
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/a+.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/a-.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/o.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/b-.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/o+.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/o-.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/ab+.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-      <div class="box">
-        <div class="bg-img"><img src="../assets/blood-group/ab-.gif" alt=""></div>
-        <div class="qty"> <span>20+</span> Donors</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="availability">
-    <h1>Availability</h1>
-
-    <div class="outer-grid">
-      <div class="inner-grid">
-        <img src="../assets/blood-group/ab+.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/ab-.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/ab.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-
-        </div>
-      </div>
-      <div class="inner-grid">
-        <img src="../assets/blood-group/o+.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/o.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/b-.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-      </div>
-      <div class="inner-grid">
-        <img src="../assets/blood-group/a-.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/o-.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-        <img src="../assets/blood-group/a+.gif" />
-        <div class="count">
-          <p>20+ Donors</p>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- <div class="gif">
-<img src="g.gif" alt="">
-    </div> -->
-</body>
-
-</html>
-
-<section id="contact">
-  <div class="container">
-    <img src="../assets/pics/nsy.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
+  <img src="ab-.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
   </div>
-  <div class="container">
-    <img src="../assets/pics/sks.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
+  <img src="ab.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+
   </div>
-  <div class="container">
-    <img src="../assets/pics/sp.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
   </div>
-  <div class="container">
-    <img src="../assets/pics/sa.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
+  <div class="inner-grid">
+  <img src="o+.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  <img src="o.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  <img src="b-.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  </div>
+  <div class="inner-grid">
+  <img src="a-.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  <img src="o-.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  <img src="a+.gif"/>
+  <div class="count">
+  <p>20+ Donors</p>
+  </div>
+  </div>
   </div>
 </section>
-<!-- <script type="text/javascript">
-  const slider = document.querySelector(".slider");
-  const nextBtn = document.querySelector(".next-btn");
-  const prevBtn = document.querySelector(".prev-btn");
-  const slides = document.querySelectorAll(".slide");
-  const slideIcons = document.querySelectorAll(".slide-icon");
-  const numberOfSlides = slides.length;
-  var slideNumber = 0;
+    <!-- <div class="gif">
+<img src="g.gif" alt="">
+    </div> -->
+  </body>
+</html>
+<section id="contact">
+  <div class="container">
+    <img src="nsy.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div>
+  <div class="container">
+  <img src="s.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+<div class="container">
+  <img src="sp.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+<div class="container">
+  <img src="sa.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+</section>
+<script type="text/javascript">
+const slider = document.querySelector(".slider");
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const slides = document.querySelectorAll(".slide");
+const slideIcons = document.querySelectorAll(".slide-icon");
+const numberOfSlides = slides.length;
+var slideNumber = 0;
 
-  //image slider next button
-  nextBtn.addEventListener("click", () => {
+//image slider next button
+nextBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove("active");
+  });
+
+  slideNumber++;
+
+  if(slideNumber > (numberOfSlides - 1)){
+    slideNumber = 0;
+  }
+
+  slides[slideNumber].classList.add("active");
+  slideIcons[slideNumber].classList.add("active");
+});
+
+//image slider previous button
+prevBtn.addEventListener("click", () => {
+  slides.forEach((slide) => {
+    slide.classList.remove("active");
+  });
+  slideIcons.forEach((slideIcon) => {
+    slideIcon.classList.remove("active");
+  });
+
+  slideNumber--;
+
+  if(slideNumber < 0){
+    slideNumber = numberOfSlides - 1;
+  }
+
+  slides[slideNumber].classList.add("active");
+  slideIcons[slideNumber].classList.add("active");
+});
+
+//image slider autoplay
+var playSlider;
+
+var repeater = () => {
+  playSlider = setInterval(function(){
     slides.forEach((slide) => {
       slide.classList.remove("active");
     });
@@ -236,68 +253,26 @@
 
     slideNumber++;
 
-    if (slideNumber > (numberOfSlides - 1)) {
+    if(slideNumber > (numberOfSlides - 1)){
       slideNumber = 0;
     }
 
     slides[slideNumber].classList.add("active");
     slideIcons[slideNumber].classList.add("active");
-  });
+  }, 3000);
+}
+repeater();
 
-  //image slider previous button
-  prevBtn.addEventListener("click", () => {
-    slides.forEach((slide) => {
-      slide.classList.remove("active");
-    });
-    slideIcons.forEach((slideIcon) => {
-      slideIcon.classList.remove("active");
-    });
+//stop the image slider autoplay on mouseover
+slider.addEventListener("mouseover", () => {
+  clearInterval(playSlider);
+});
 
-    slideNumber--;
-
-    if (slideNumber < 0) {
-      slideNumber = numberOfSlides - 1;
-    }
-
-    slides[slideNumber].classList.add("active");
-    slideIcons[slideNumber].classList.add("active");
-  });
-
-  //image slider autoplay
-  var playSlider;
-
-  var repeater = () => {
-    playSlider = setInterval(function () {
-      slides.forEach((slide) => {
-        slide.classList.remove("active");
-      });
-      slideIcons.forEach((slideIcon) => {
-        slideIcon.classList.remove("active");
-      });
-
-      slideNumber++;
-
-      if (slideNumber > (numberOfSlides - 1)) {
-        slideNumber = 0;
-      }
-
-      slides[slideNumber].classList.add("active");
-      slideIcons[slideNumber].classList.add("active");
-    }, 3000);
-  }
+//start the image slider autoplay again on mouseout
+slider.addEventListener("mouseout", () => {
   repeater();
-
-  //stop the image slider autoplay on mouseover
-  slider.addEventListener("mouseover", () => {
-    clearInterval(playSlider);
-  });
-
-  //start the image slider autoplay again on mouseout
-  slider.addEventListener("mouseout", () => {
-    repeater();
-  });
-</script> -->
+});
+</script>
 
 </body>
-
 </html>
