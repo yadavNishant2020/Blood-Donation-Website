@@ -1,389 +1,195 @@
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-header{
-  position:fixed;
-  z-index: 999;
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: all 0.5s ease-out;
 }
-section {
-  height: 100vh;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  background-color: #CFFFFE;
-}
-section {
-  background-image: url(bg.jpg);
 
-}
-p{
-  padding-top: 1rem;
-
-  opacity: 1;
-}
-/* Navabar */
-#abc{
-  width:100%;
-  height: 4rem;
-  z-index: 2;
-  position:fixed;
-background-color: #000000;
-background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);;
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-#abc h4 {
+/* Header - Navbar */
+.navbar {
   position: fixed;
-  font-size: 2rem;
-  padding-left: 2rem;
-  font-family: "Ubuntu";
-  padding-top: 0.8rem;
-  color: #E40017;
-}
-nav{
   width: 100%;
-
+  padding: 0.8rem 2rem 0.8rem 1.6rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: rgba(137, 43, 226, 0.5);
 }
-nav ul{
-  float: right;
-
-}
-nav ul li .Brand{
+.logo {
+  font-size: 1.8rem;
+  transition: all 0.5s ease;
+  font-weight: bold;
   float: left;
-
-}
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  transition: 0.7s all;
-  padding-top:1.5rem;
-  font-size: 1.05rem;
-  font-family: "Montserrat-Light";
-}
-nav ul li:hover{
-color: white;
-}
-nav ul li a{
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  margin-bottom: 7.5px;
-}
-
-.container1 {
-    width: 90%;
-    display: flex;
-
-}
-
-.stop {
-    position: fixed;
-}
-
-/* gif */
-.gif{
-z-index:1;
-position:absolute;
-
-}
-/* for flip */
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  justify-self: center;
-  margin-right: 300px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(360deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: #E40017;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 15px;
-}
-.flip-box img{
-  width: auto;
-  height: 350px;
-  border-radius: 15px;
-
-}
-
-/* Slider */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Russo+One&display=swap');
-
-
-.slider{
-  position: absolute;
-  background: #CFFFFE;
-  width: 800px;
-  min-height: 500px;
-  margin: 20px;
-  overflow: hidden;
-  border-radius: 10px;
-  height: 100vh;
-  width:100vw;
-  right: -20px;
-}
-
-.slider .slide{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  clip-path: circle(0% at 0 50%);
-}
-
-.slider .slide.active{
-  clip-path: circle(150% at 0 50%);
-  transition: 2s;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-}
-
-.slider .slide img{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slider .slide .info{
-  position: absolute;
-  color: #222;
-  background: rgba(255, 255, 255, 0.8);
-  width: 85%;
-  height: 70%;
-  margin-top: 50px;
-  margin-left: 50px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider .slide .info h1{
-  font-size: 5.5rem;
-  font-weight: 800;
-  color: #E40017;
-font-family: 'Russo One', sans-serif;
-}
-
-.slider .slide .info h3{
-  font-size: 2em;
-  font-weight: 400;
-letter-spacing: 1rem;
-font-weight: bolder;}
-
-.navigation{
-  height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.slider:hover .navigation{
-  opacity: 1;
-}
-
-.prev-btn, .next-btn{
-  z-index: 999;
-  font-size: 4em;
-  color: #222;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px;
   cursor: pointer;
 }
-
-.prev-btn{
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+.logo:hover {
+  letter-spacing: 2px;
 }
-
-.next-btn{
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.navigation-visibility{
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-}
-
-/* Image grid */
-.outer-grid {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
-   padding-top: 10rem;
-}
-.inner-grid {
-   flex: 25%;
-   max-width: 35%;
-   padding: 0 100px;
-}
-.inner-grid img {
-   margin-top: 8px;
-   width: 50%;
-   padding: 10px;
-}
-
-.count{
-  float:right;
-  padding-top: 4rem;
-  padding-right: 3rem;
-  color: #E99497;
-  font-size: 1.15rem;
-
-}
-#Benefits h2{
-  position: absolute;
-    padding-bottom: 450px;
-    font-size: 3rem;
-    font-family: "Ubuntu";
-}
-#Availability h1{
-padding-bottom: 500px;
-position: absolute;
-font-family: "Ubuntu";
-font-size: 4rem;
-color: #E40017;
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-.count p{
-font-family: 'Righteous', cursive;
-}
-@media screen and (max-width: 800px) {
-   .inner-grid {
-      flex: 50%;
-      max-width: 50%;
-   }
-}
-@media screen and (max-width: 600px) {
-   .inner-grid {
-      flex: 100%;
-      max-width: 100%;
-   }
-}
-.navigation-visibility .slide-icon{
-  z-index: 999;
-  background: rgba(255, 255, 255, 0.5);
-  width: 20px;
-  height: 10px;
-  transform: translateY(-50px);
-  margin: 0 6px;
-  border-radius: 2px;
-  box-shadow: 0 5px 25px rgb(1 1 1 / 20);
-}
-
-/* Contact page */
-.container {
-  position: relative;
-  width: 20%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: 300px;;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background: #00bf8f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  overflow: hidden;
-  width: 100%;
-  height:0;
-  transition: .5s ease;
-}
-
-.container:hover .overlay {
-  bottom: 0;
-  height: 100%;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
+header ul {
   position: absolute;
   top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  right: 2rem;
+  transform: translateY(-50%);
+  list-style-type: none;
+  display: flex;
+  float: right;
+}
+li a {
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: white;
+}
+li a:hover {
+  letter-spacing: 2px;
+}
+ul li {
+  border-radius: 10px;
+  margin: 10px;
+}
+#main-login-Btn {
+  cursor: pointer;
+  margin: 5px 20px 0px 15px;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(30deg, rgb(187, 22, 22), rgb(212, 119, 12));
+  color: white;
+}
+#main-login-Btn:hover {
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.411);
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-box {
+  padding: 20px 20px;
+  flex: 0 1 150px;
+}
+.left-home {
+  width: fit-content;
+  background-color: rgba(245, 222, 179, 0.5);
+  border-radius: 12px;
+  margin: 160px auto 80px auto;
+}
+.left-home h1 {
+  font-size: 5rem;
+}
+.right-home {
+  width: fit-content;
+  display: grid;
+  align-items: center;
   text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  padding: 10% 5%;
+  border-radius: 20px;
+  margin: 160px auto 80px auto;
+}
+#searchCity {
+  font-weight: 500;
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  width: 250px;
+  border-radius: 50px;
+  padding: 8px 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+#search-btn {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #199475;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-@media (max-width: 900px){
-  .slider{
-    width: 100%;
-  }
-
-  .slider .slide .info{
-    position: relative;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* Benefits */
+#benefits {
+  display: grid;
+  padding: 20px;
+}
+.head-container h2 {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  font-size: 4rem;
+  text-decoration-line: underline;
+  text-decoration-color: #e43011;
+}
+.body-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+#benefits .body-container .box {
+  background-color: rgba(255, 235, 205, 0.75);
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  border: 1px solid rgb(206, 206, 206);
+  flex: 1 1 150px;
+  margin: 20px;
+}
+#benefits .body-container .box:hover {
+  box-shadow: 0 0 20px black;
+}
+#benefits .body-container .box .box-head {
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: linear-gradient(15deg, tomato, orange);
 }
 
-@media (max-width: 500px){
-  .slider .slide .info h2{
-    font-size: 1.8em;
-    line-height: 40px;
-  }
-
-  .slider .slide .info p{
-    font-size: 0.9em;
-  }
+/* Availability */
+#availability {
+  display: grid;
+  padding: 20px;
 }
+.body-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#availability .body-container .box {
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 235, 205, 0.75);
+  /* background-color: rgba(245, 222, 179, 0.5); */
+  border: 1px solid rgb(206, 206, 206);
+  flex: 1 1 150px;
+  margin: 20px;
+}
+#availability .body-container .box:hover {
+  box-shadow: 0 0 20px black;
+}
+.box .bg-img img {
+  max-width: 12rem;
+  height: auto;
+}
+.box .qty span {
+  font-size: 4rem;
+}
+
+/* Team */
+
+
+/* Footer */
